@@ -7,4 +7,4 @@ Scenario: Post a comment using a parameter
 		| User 2 | Password 2|
 		| User 3 | Password 3|
 	And User clicks on the submit button 
-	Then Comment should get posted 
+	Then Comment should get posted

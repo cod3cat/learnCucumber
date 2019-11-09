@@ -1,5 +1,7 @@
 package LearnCucumber.steps;
 
+import LearnCucumber.transform.TransformData;
+import cucumber.api.Transform;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -12,7 +14,7 @@ public class SIngleParameterSteps {
     }
 
     @When("^User enters comment as \"([^\"]*)\"$")
-    public void user_enters_comment_as_something(String strArg1) throws Throwable {
+    public void user_enters_comment_as_something(@Transform(TransformData.class)String strArg1) throws Throwable {
         System.out.println("User enters comment as " +strArg1);
     }
 
